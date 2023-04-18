@@ -1,0 +1,15 @@
+{
+  "name": "calcular-nota",
+  "version": "1.0.0",
+  "description": "En esta pagina se calculara tu nota final o se estimara cuanto necesitas para ganar la materia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}
