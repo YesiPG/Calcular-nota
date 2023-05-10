@@ -38,6 +38,20 @@ body {
     }
 
     &Add {
+    
+      &Cont{
+        
+        opacity: 1;
+        pointer-events: unset;
+        transition: opacity .2s ease-in;
+
+        &Show{
+          opacity: 0;
+          pointer-events: none;
+        }
+          
+        }
+      
       label {
         font-size: 2rem;
 
