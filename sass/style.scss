@@ -1,0 +1,89 @@
+@use "reset";
+@use "var";
+@use "mixins";
+
+body {
+  background-image: url(https://previews.123rf.com/images/zagory/zagory1606/zagory160600054/58467230-fondo-transparente-con-f%C3%B3rmulas-y-gr%C3%A1ficos-sobre-el-tema-de-las-matem%C3%A1ticas-y-la-educaci%C3%B3n-el-marcad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    font-size: var.$title-size;
+    background-color: var.$color-azul;
+    color: var.$color-blanco;
+    text-align: center;
+    padding: var.$padding1;
+  }
+}
+
+.cont {
+  margin: 4rem 38rem;
+  border-radius: 0.6rem;
+  box-shadow: 2px 4px 10px var.$color-negro;
+  background-color: var.$color-blanco;
+  padding: 3rem;
+
+  &Parrafo {
+    font-size: var.$parrafo-size;
+    border-bottom: 1px solid var.$color-gris;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &Form {
+    &Title {
+      font-size: var.$parrafo-size;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    &Add {
+      label {
+        font-size: 2rem;
+
+        input {
+          display: inline-block;
+          margin: 0 0.5rem 2rem;
+          background-color: rgba($color: #9999, $alpha: 0.3);
+          padding: 0.5rem 1rem;
+          border-bottom: 1px solid var.$color-negro;
+          border-radius: 0.6rem;
+        }
+      }
+    }
+  }
+
+  &Agregar {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border-radius: 0.6rem;
+    font-size: 1.8rem;
+    color: var.$color-blanco;
+    background-color: var.$color-rojo;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var.$color-azul;
+    }
+  }
+
+  &Calcular {
+    @include mixins.crear-flex(center, center);
+
+    &Boton {
+      cursor: pointer;
+      font-size: 2.3rem;
+      padding: 1rem 3rem;
+      margin-top: 4rem;
+      border-radius: 0.6rem;
+      background-color: var.$color-azul;
+      color: var.$color-blanco;
+      transition: background-color 0.2s ease;
+
+      &:hover{
+        background-color: var.$color-verde;
+      }
+    }
+  }
+}
